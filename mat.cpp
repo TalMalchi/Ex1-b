@@ -22,12 +22,12 @@ std::string ariel::mat(int col, int row, char symbol_1, char symbol_2)
     // check odd values
     if (row % 2 == 0 || col % 2 == 0)
     {
-        throw invalid_argument("number must odd ");
+        throw invalid_argument("Matrix size must be odd ");
     }
     // check negative values
     if (row < 0 || col < 0)
     {
-        throw invalid_argument("number must positive");
+        throw invalid_argument("Number must be positive");
     }
 
     if (symbol_1 < ascii_symbol_min || symbol_2 < ascii_symbol_min || symbol_1 > ascii_symbol_max || symbol_2 > ascii_symbol_max)
@@ -60,12 +60,12 @@ std::string ariel::mat(int col, int row, char symbol_1, char symbol_2)
 
         if (Start_row < End_row && Start_col < End_col)
         {
-            // fill last row
+            // fill last row- from left to right
             for (int l = End_col - 1; l >= Start_col; l--)
             {
                 matrix[End_row - 1][l] = sym;
             }
-            // fill first col
+            // fill first col- down to up
             for (int t = End_row - 1; t >= Start_row; t--)
             {
                 matrix[t][Start_col] = sym;
