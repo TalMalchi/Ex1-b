@@ -91,24 +91,3 @@ std::string ariel::mat(int col, int row, char symbol_1, char symbol_2)
     return ans;
 };
 
-// int main(int argc, char const *argv[])
-// {
-// //     int row, col;
-// //     char symbol_1, symbol_2;
-
-//     // cout << "Please enter row's number " <<endl;
-//     // scanf("%d", &row);
-
-//     // cout << "Please enter col's number " <<endl;
-//     // scanf("%d", &col);
-
-//     // cout << "Please enter Symbol 1 " <<endl;
-//     // scanf("%c", &symbol_1);
-
-//     // cout << "Please enter Symbol 2 " <<endl;
-//     // scanf("%c", &symbol_2);
-
-//     cout << ariel::mat(13, 15, '@', '-') <<endl;
-
-//     return 0;
-// }
